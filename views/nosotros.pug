@@ -1,0 +1,30 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="/img/nosotros.jpg", alt="", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote En nuestro portal de hoteles nacemos con un objetivo claro: ayudarte a encontrar los mejores alojamientos de España de forma rápida, sencilla y fiable. Creemos que cada viaje es una experiencia única, y por eso seleccionamos cuidadosamente hoteles que destacan por su calidad, comodidad y excelente ubicación, ya sea para unas vacaciones, un viaje de negocios o una escapada de fin de semana.
+
+                p Somos un equipo apasionado por los viajes y el turismo, con un profundo conocimiento del sector hotelero español. Trabajamos constantemente para ofrecerte información actualizada, descripciones claras y opciones para todo tipo de viajeros y presupuestos. Nuestro compromiso es brindarte una plataforma intuitiva y transparente, donde puedas comparar y elegir el hotel que mejor se adapte a tus necesidades.
+
+                p Más que un simple buscador, queremos ser tu compañero de confianza a la hora de planificar tu estancia. Nos esforzamos cada día por mejorar nuestros servicios y ampliar nuestra oferta, poniendo siempre al usuario en el centro. Porque para nosotros, viajar bien empieza por elegir el lugar perfecto donde alojarse.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-xl-center
+            .row
+                .col-md-4
+                    img(src="/img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Garantizamos una navegación segura mediante tecnologías de protección avanzadas que salvaguardan tus datos y aseguran una experiencia fiable y confidencial en todo momento.
+                .col-md-4
+                    img(src="/img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Hoteles
+                    p Seleccionamos cuidadosamente los mejores hoteles de España, destacando aquellos que ofrecen la máxima calidad, confort y excelentes valoraciones para garantizarte una estancia inmejorable.
+                .col-md-4
+                    img(src="/img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios
+                    p Comparamos las mejores opciones para ofrecerte precios competitivos y ofertas atractivas, asegurando siempre la mejor relación calidad-precio en tu reserva.

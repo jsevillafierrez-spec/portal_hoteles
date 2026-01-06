@@ -1,0 +1,33 @@
+extends ./layout/index
+block slider
+    .slider
+        h1 Santa Cruz de Tenerife
+        em presenciar
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p
+                    | En nuestro portal de hoteles tenemos un objetivo claro: ayudarte a encontrar los mejores alojamientos de España de manera rápida, sencilla y fiable. Cada viaje es único, por eso seleccionamos hoteles que destacan por su calidad, comodidad y ubicación, ideales para vacaciones, viajes de negocios o escapadas de fin de semana.
+                p
+                    | Somos un equipo apasionado por los viajes y el turismo, con profundo conocimiento del sector hotelero español. Ofrecemos información clara y actualizada, opciones para todos los viajeros y presupuestos, y una plataforma intuitiva que te permite comparar y elegir el hotel que mejor se adapte a ti, convirtiéndonos en tu compañero de confianza al planificar cualquier estancia.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen de Nosotros", class="img-fluid rounded")
+
+        include ./layout/layout_hoteles
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 10% de Descuento
+                        p.nombre Hotel en Nueva York
+                        p.fecha 20 de Marzo de 2026 - 31 de Marzo de 2026
+                        p.precio 13.500 €
+
+    .container
+        h2.mt-5.text-center RESEÑAS
+        include ./layout/layout_testimonio
+

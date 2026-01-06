@@ -1,0 +1,22 @@
+.row.proximos-hoteles
+    each hotel in hoteles
+        .col-md-6.col-lg-4.mb-4
+            .card
+                img.card-img-top(src=`img/hotel_${hotel.imagen}.jpg`)
+                .card-body
+                    h2=hotel.nombre
+                    p
+                    svg.icon.icon-tabler.icons-tabler-filled.icon-tabler-directions(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='red')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M10 22a1 1 0 0 1 0 -2h1v-2.001l-5 .001a1 1 0 0 1 -.707 -.293l-2 -2a1 1 0 0 1 0 -1.414l2 -2a1 1 0 0 1 .707 -.293l5 -.001v-1.999h-3a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h3v-1a1 1 0 0 1 2 0v1h6a1 1 0 0 1 .707 .293l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1 -.707 .293h-6v1.999l1 .001a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1l-1 -.001v2.001h1a1 1 0 0 1 0 2z')
+                    |  #{hotel.ciudad}
+                    p
+                    svg.icon.icon-tabler.icons-tabler-filled.icon-tabler-bed(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewbox='0 0 24 24' fill='red')
+                        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                        path(d='M3 6a1 1 0 0 1 .993 .883l.007 .117v6h6v-5a1 1 0 0 1 .883 -.993l.117 -.007h8a3 3 0 0 1 2.995 2.824l.005 .176v8a1 1 0 0 1 -1.993 .117l-.007 -.117v-3h-16v3a1 1 0 0 1 -1.993 .117l-.007 -.117v-11a1 1 0 0 1 1 -1z')
+                        path(d='M7 8a2 2 0 1 1 -1.995 2.15l-.005 -.15l.005 -.15a2 2 0 0 1 1.995 -1.85z')
+                    |  Habitaciones Disponibles: #{hotel.habitaciones_disponibles}
+                    p
+
+                    p=hotel.descripcion.substring(0, 100) + '...'
+                    a(href=`hoteles/${hotel.slug}`, class="btn btn-success btn-block") Más Información

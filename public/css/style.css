@@ -1,0 +1,178 @@
+:root {
+    font-family: 'Staatliches', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A; /* Gris elegante y legible */
+}
+
+h1, h2, h3 {
+    font-family: 'Staatliches', cursive;
+    color: #2E4A7D; /* Azul elegante y profundo */
+}
+
+h1 { font-size: 3.4rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 3rem; }
+
+.btn-success {
+    background-color: #E94F6D; /* Rosa coral vibrante y carismático */
+    border-color: #E94F6D;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    border-radius: .8rem;
+    transition: background-color .3s ease;
+}
+
+.btn-success:hover {
+    background-color: #D33A57; /* Tonalidad más intensa al pasar el mouse */
+    border-color: #D33A57;
+}
+
+.slider {
+    background: url(../img/superior.jpg);
+    min-height: 600px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.slider h1 { color: white; }
+
+.slider em {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4rem;
+    order: -1;
+    line-height: .8;
+    color: rgba(255, 255, 255, .5);
+}
+
+@media (min-width:768px) {
+    .slider em { font-size: 8rem; }
+}
+
+.home { position: relative; }
+
+.home .navegacion {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-link.active {
+    border-bottom: 5px solid #E94F6D; /* Toque carismático */
+}
+
+blockquote {
+    font-weight: bold;
+    line-height: 2;
+    color: #2E4A7D; /* Azul elegante */
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #4A4A4A; /* Gris medio */
+}
+
+.navegacion { background-color: #2E4A7D; }
+
+header .nav a {
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    color: darkgoldenrod; /* Dorado cálido y elegante */
+}
+
+footer .nav a,
+.copyright {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    color: #4A4A4A; /* Gris elegante */
+}
+
+.listado-iconos { background-color: #F5F5F5; }
+.listado-iconos img { height: 100px; }
+
+.descuento {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/cupon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width:768px) {
+    .descuento {
+        height: 400px;
+        background-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, .3) 0%,
+                rgba(0, 0, 0, .3) 50%,
+                transparent 50%,
+                transparent 100%
+        ), url(../img/cupon.jpg);
+    }
+}
+
+.descuento .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    /* Degradado sutil: 90% rosa coral, 10% blanco */
+    background: linear-gradient(90deg, #E94F6D 0%, #E94F6D 90%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #E94F6D; /* fallback por si no soporta gradient text */
+}
+
+.descuento .titulo {
+    font-size: 3rem;
+    color: #F2D479; /* Dorado elegante para contraste */
+}
+
+.descuento .precio {
+    font-size: 3rem;
+    font-weight: bold;
+    /* Degradado sutil en el precio: rosa predominante con toque blanco */
+    background: linear-gradient(90deg, #E94F6D 0%, #E94F6D 90%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.proximos-hoteles p { font-size: .9rem; color: #5A5A5A; }
+
+i { color: #E94F6D; font-size: 2rem; }
+
+.testimoniales p {
+    font-size: .8rem;
+    font-weight: normal;
+    color: #4A4A4A;
+}
+
+.testimoniales p::before {
+    background-image: url(../img/quote.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.blockquote-footer {
+    text-align: right;
+    color: #F2D479; /* Dorado elegante */
+    font-weight: bold;
+    margin-top: 1rem;
+}
