@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # 🏨 Portal de Hoteles
 
 Aplicación web desarrollada con **Node.js** que simula un **portal de hoteles**, donde se muestran distintos alojamientos y testimonios de usuarios obtenidos desde una base de datos.
@@ -61,4 +58,4 @@ El objetivo es practicar y demostrar conocimientos de **desarrollo backend**, ba
 ## 👤 Autor
 
 **Jose Damian Sevilla**
->>>>>>> 0fc2fd1352c6532ff493551bdbec797633c9b569
+
